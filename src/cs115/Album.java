@@ -9,7 +9,7 @@ public class Album {
 
     public Album(String title) {
         this.title = title;
-        songs = new ArrayList();
+        songs = new ArrayList<>();
     }
 
     public void addSong(Song song) {
@@ -21,5 +21,13 @@ public class Album {
         for(Song song : songs) {
             System.out.println(song.getTitle());
         }
+    }
+
+    public ArrayList<Song> getSongs() {
+        return songs;
+    }
+
+    public String getTitle() {
+        return title;
     }
 }
